@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <script defer src="js/index.js"></script>
+
+        <title>Contacto</title>
+    </head>
+    <body>
+        <header></header>
+
+        <main>
+            <section id="formulario">
+                <h1>¿Hablamos?</h1>
+                <p>Cuéntame qué tienes en mente, juntos podremos darle forma a cualquier proyecto.</p>
+            
+                <form action="procesar.php" method="post">
+                    <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+        
+                    <input type="email" id="email" name="email" required placeholder="Email">
+        
+                    <textarea id="resumen-proyecto" name="resumen-proyecto" rows="4" required placeholder="Resumen de tu proyecto"></textarea>
+        
+                    <input type="submit" value="Enviar" class="boton-submit">
+                </form>
+            </section>
+        </main>
+        
+        <footer></footer>
+    </body>
+</html>
