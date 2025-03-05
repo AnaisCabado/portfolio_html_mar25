@@ -6,26 +6,12 @@
     box-sizing: border-box;
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
+html,body,div,span,applet,object,
+iframe,h2,h3,h4,h5,
+h6,p,blockquote,
+pre,a,
+abbr,acronym,
+address,big,
 cite,
 code,
 del,
@@ -168,8 +154,6 @@ img {
     /* GRIS OSCURO*/
     --main-color-grey: #B1B1B1;
     /* GRIS CLARO*/
-    --main-max-width: 1200px;
-    /* TAMAÑO MÁXIMO GENERAL DE CONTENIDOS */
     --main-border: 1px solid transparent;
     /* BORDE GENERAL PARA ELEMENTOS */
 }
@@ -177,10 +161,16 @@ img {
 /*END VARIABLES*/
 
 /*HEADER*/
+header {
+    width: 100vw;
+    background-color: var(--main-color-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #menu-header {
     width: 100%;
 
-    background-color: var(--main-color-pink);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -192,7 +182,7 @@ img {
 }
 
 .logo {
-    width: 6em;
+    width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,7 +228,6 @@ h3,
 h4 {
     font-family: Bebas Neue;
     font-weight: var(--main-font-weight);
-    color: white;
 
     text-align: left;
 
@@ -263,15 +252,14 @@ h4 {
 
 p {
     font-size: 1.5rem;
-    color: white;
 }
 
 button,
-#formulario form input.boton-submit {
+#formulario .formulario-texto form .boton-submit {
     width: 100%;
     background-color: var(--main-color-pink);
     color: var(--main-color-black);
-    border: 1px solid transparent;
+    border: 1px solid var(--main-color-black);
     border-radius: 5px;
     font-size: 1.5em;
     padding: .5em 1em;
@@ -280,28 +268,33 @@ button,
 }
 
 button:hover,
-#formulario form input.boton-submit:hover {
+#formulario .formulario-texto form .boton-submit:hover {
     background-color: white;
     border: 1px solid var(--main-color-pink);
     color: var(--main-color-pink);
 }
 
 /*INTRODUCCION*/
-#introduccion .introduccion-pink {
+#introduccion {
+    width: 100%;
+
     background-color: var(--main-color-black);
+    color: white;
 
     display: flex;
     flex-flow: column;
     gap: 1em;
 }
 
-#introduccion .introduccion-pink h1 {
-    padding: 1em 10%;
+#introduccion .introduccion-texto {
+    padding: 5em 10% 10em; 
+}
+
+#introduccion .introduccion-texto h1 {
     color: var(--main-color-pink);
 }
 
-#introduccion .introduccion-pink .introduccion-img {
-    position: relative;
+#introduccion .introduccion-img {
     max-height: 500px;
     object-fit: cover;
     background-color: white;
@@ -383,8 +376,11 @@ button:hover,
     border-radius: 5px;
     object-fit: cover;
     border: 1px solid white;
-    transition: .5s;
     overflow: hidden;
+}
+
+#ambitos-trabajo .diseno-grafico .diseno-grafico-galeria .diseno-grafico-card .card-img img {
+    transition: .5s;
 }
 
 #ambitos-trabajo .diseno-grafico .diseno-grafico-galeria .diseno-grafico-card .card-img img:hover {
@@ -420,7 +416,7 @@ button:hover,
     width: 100%;
     max-width: 400px;
     height: auto;
-    overflow: hidden;
+    border-radius: 5px;
 }
 
 #ambitos-trabajo .ilustracion .ilustracion-galeria img {
@@ -430,23 +426,9 @@ button:hover,
 #ambitos-trabajo .ilustracion .ilustracion-galeria img:hover {
     scale: 110%;
 }
-
 /*END ILUSTRACION*/
 /*END AMBITOS DE TRABAJO*/
-/*ULTIMOS TRABAJOS*/
-#ultimos-trabajos {
-    background-color: var(--main-color-pink);
-    color: var(--main-color-black);
-    padding: 1em 10%;
 
-    display: flex;
-    flex-flow: column;
-    gap: 1em;
-
-    width: 100%;
-}
-
-/*END ULTIMOS TRABAJOS*/
 /*PRODUCTOS*/
 #productos {
     background-color: var(--main-color-pink);
@@ -458,8 +440,8 @@ button:hover,
     padding: 1em 10%;
     gap: 1em;
 }
-
 /*END PRODUCTOS*/
+
 /*CONTACTO*/
 #contacto {
     display: flex;
@@ -522,6 +504,8 @@ footer {
     gap: 1em;
 
     padding: 3em 10%;
+
+    color: white;
 }
 
 #biografia .retrato {
@@ -544,6 +528,10 @@ footer {
 
 
 /*PAGINA DE PORTFOLIO*/
+#portfolio {
+    width: 100%;
+}
+
 #portfolio-texto {
     width: 100%;
 
@@ -552,6 +540,8 @@ footer {
     gap: 1em;
 
     padding: 3em 10% 0;
+
+    color: white;
 }
 
 #portfolio-grafico,
@@ -564,6 +554,9 @@ footer {
     gap: 1em;
 
     padding: 3em 10%;
+
+    color: white;
+
 }
 
 #portfolio-grafico .galeria-portfolio,
@@ -636,34 +629,49 @@ footer {
     border-radius: 5px;
 
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
     gap: 1em;
 
-    padding: 1em 10%;
-    margin: 2em;
+    padding: 1em;
+    margin: 2em 10%;
+    width: 80%;
 }
 
-#formulario form {
+#formulario .formulario-img {
+    border-radius: 5px;
+    max-width: 40%;
+}
+
+#formulario .formulario-texto {
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+    color: var(--main-color-black);
+}
+
+#formulario .formulario-texto form {
     display: flex;
     flex-flow: column;
     gap: .5em;
 }
 
-#formulario form input,
-#formulario form textarea {
+#formulario .formulario-texto form input,
+#formulario .formulario-texto form textarea {
     background-color: var(--main-color-black);
-    color: var(--main-color-pink);
+    color: white;
     font-family: var(--main-font);
-    border: 1px solid white;
+    border: none;
     border-radius: 5px;
     padding: 1em;
 }
 
-#formulario form input::placeholder,
-#formulario form textarea::placeholder {
-    color: var(--main-color-pink);
+#formulario .formulario-texto form input::placeholder,
+#formulario .formulario-texto form textarea::placeholder {
+    color: white;
     font-family: var(--main-font);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 /*END PAGINA DE CONTACTO*/
@@ -731,6 +739,10 @@ footer {
         display: flex;
         flex-flow: column;
         gap: .1em;
+    }
+
+    #formulario {
+        flex-flow: column;
     }
 }
 
