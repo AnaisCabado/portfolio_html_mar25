@@ -170,7 +170,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 1;
-    max-height: 80px;
+    height: 5em;
 }
 #menu-header {
     width: 100%;
@@ -225,6 +225,7 @@ main {
     display: flex;
     flex-flow: column;
     align-items: center;
+    margin-top: 5em;
 }
 
 h1,h2,h3,h4 {
