@@ -295,6 +295,8 @@ p {
 }
 
 #introduccion .introduccion-texto {
+    width: 100%;
+    
     padding: 5em 10% 10em; 
     display: flex;
     flex-flow: column;
@@ -369,7 +371,7 @@ p {
     flex-flow: row;
     width: 100%;
     position: sticky;
-    top: 1em;
+    top: 6em;
     gap: 1em;
 
     background-color: var(--main-color-black);
@@ -418,15 +420,14 @@ p {
 }
 
 #ambitos-trabajo .ilustracion .ilustracion-galeria {
-    display: flex;
-    flex-flow: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: .5em;
 }
 
 #ambitos-trabajo .ilustracion .ilustracion-galeria .ilustracion-galeria-img {
     width: 100%;
     max-width: 400px;
-    height: auto;
     border-radius: 5px;
 }
 
@@ -684,17 +685,13 @@ footer {
         font-size: 1rem;
     }
 
-    button {
+    .button {
         font-size: .8em;
     }
 
     /*ESTILOS HEADER*/
     #menu-header {
         padding: 1em;
-    }
-
-    #menu-header .menu-header-nav {
-        padding: 0 1em;
     }
 
     .logo {
@@ -707,15 +704,14 @@ footer {
 
     .nav-apartados {
         display: none;
-        font-size: 1em;
-        gap
-        .5em
+        font-size: .6em;
     }
 
     .nav-apartados.active {
         width: 100%;
+
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
@@ -733,6 +729,10 @@ footer {
     /*GALERIA ILUSTRACION PORTFOLIO*/
     #portfolio-ilustracion .galeria-ilustracion {
         flex-flow: column;
+    }
+
+    #portfolio-ilustracion .ilustracion-video video {
+        max-width: 100%;
     }
 }
 
