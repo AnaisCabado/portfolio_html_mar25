@@ -727,10 +727,11 @@ footer {
     }
 
     /*GALERIA ILUSTRACION PORTFOLIO*/
-    #portfolio-ilustracion .galeria-ilustracion {
-        flex-flow: column;
+    #portfolio-ilustracion .galeria-portfolio,
+    #portfolio-grafico .galeria-portfolio,
+    #portfolio-textil .galeria-portfolio {
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     }
-
     #portfolio-ilustracion .ilustracion-video video {
         max-width: 100%;
     }
