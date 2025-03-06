@@ -393,6 +393,7 @@ p {
 }
 
 #ambitos-trabajo .diseno-grafico .diseno-grafico-galeria .diseno-grafico-card .card-img img {
+    width: 100%;
     transition: .5s;
 }
 
@@ -722,6 +723,13 @@ footer {
         gap: .1em;
     }
 
+    /*ILUSTRACION INDEX*/
+    #ambitos-trabajo .ilustracion .ilustracion-galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    }
+
+    /*FORMULARIO CONTACTO*/
     #formulario {
         flex-flow: column;
     }
