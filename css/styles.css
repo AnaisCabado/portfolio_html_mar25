@@ -220,11 +220,11 @@ header {
     gap: 1em;
     font-size: 1.5em;
 }
-
-.nav-apartados .nav-element:hover {
-    color: white;
+@media(hover: hover) and (pointer: fine) {
+    .nav-apartados .nav-element:hover {
+        color: white;
+    }
 }
-
 /*END HEADER*/
 
 /*MAIN*/
@@ -284,14 +284,14 @@ p {
     transition: .5s;
     cursor: pointer;
 }
-
-.button:hover,
-#formulario .formulario-texto form .boton-submit:hover {
-    background-color: white;
-    border: 1px solid var(--main-color-pink);
-    color: var(--main-color-pink);
+@media(hover: hover) and (pointer: fine) {
+    .button:hover,
+    #formulario .formulario-texto form .boton-submit:hover {
+        background-color: white;
+        border: 1px solid var(--main-color-pink);
+        color: var(--main-color-pink);
+    }
 }
-
 /*INTRODUCCION*/
 #introduccion {
     width: 100%;
@@ -407,11 +407,11 @@ p {
     width: 100%;
     transition: .5s;
 }
-
-#ambitos-trabajo .diseno-grafico .diseno-grafico-galeria .diseno-grafico-card .card-img img:hover {
-    scale: 110%;
+@media(hover: hover) and (pointer: fine) {
+    #ambitos-trabajo .diseno-grafico .diseno-grafico-galeria .diseno-grafico-card .card-img img:hover {
+        scale: 110%;
+    }
 }
-
 #ambitos-trabajo .diseno-grafico .diseno-grafico-galeria .diseno-grafico-card .card-text {
     display: flex;
     flex-flow: column;
@@ -446,9 +446,10 @@ p {
 #ambitos-trabajo .ilustracion .ilustracion-galeria img {
     transition: .5s;
 }
-
-#ambitos-trabajo .ilustracion .ilustracion-galeria img:hover {
-    scale: 110%;
+@media(hover: hover) and (pointer: fine) {
+    #ambitos-trabajo .ilustracion .ilustracion-galeria img:hover {
+        scale: 110%;
+    }
 }
 /*END ILUSTRACION*/
 /*END AMBITOS DE TRABAJO*/
@@ -510,11 +511,11 @@ footer {
     width: 20px;
     height: 20px;
 }
-
-#redes svg:hover {
-    fill: white;
+@media(hover: hover) and (pointer: fine) {
+    #redes svg:hover {
+        fill: white;
+    }
 }
-
 /*END FOOTER*/
 
 
@@ -596,13 +597,13 @@ footer {
     border-radius: 5px;
     transition: .5s;
 }
-
-#portfolio-grafico .galeria-portfolio img:hover,
-#portfolio-textil .galeria-portfolio img:hover,
-#portfolio-ilustracion .galeria-portfolio img:hover {
-    scale: 1.1;
+@media(hover: hover) and (pointer: fine) {
+    #portfolio-grafico .galeria-portfolio img:hover,
+    #portfolio-textil .galeria-portfolio img:hover,
+    #portfolio-ilustracion .galeria-portfolio img:hover {
+        scale: 1.1;
+    }
 }
-
 #portfolio-ilustracion .galeria-ilustracion {
     display: flex;
     flex-flow: column;
