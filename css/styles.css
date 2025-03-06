@@ -257,20 +257,25 @@ p {
     font-size: 1.5rem;
 }
 
-button,
+.button,
 #formulario .formulario-texto form .boton-submit {
     width: 100%;
+
     background-color: var(--main-color-pink);
     color: var(--main-color-black);
     border: 1px solid var(--main-color-black);
     border-radius: 5px;
+
     font-size: 1.5em;
+    text-align: center;
+
     padding: .5em 1em;
+    
     transition: .5s;
     cursor: pointer;
 }
 
-button:hover,
+.button:hover,
 #formulario .formulario-texto form .boton-submit:hover {
     background-color: white;
     border: 1px solid var(--main-color-pink);
