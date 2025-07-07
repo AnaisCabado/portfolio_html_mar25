@@ -12,15 +12,17 @@ function MainInfo() {
                     </div>
                 </div>
 
-                {/* TODO REVISAR */}
                 <div className="main-info__first-text">
                     <p>Diseñadora gráfica, ilustradora y desarrolladora UX/UI y fullstack. Me apasiona transformar ideas en experiencias visuales y digitales que conecten con las personas. </p>
 
-                    <button className='button'>CONTÁCTAME</button>
+                    <button className='button'
+                        onClick={() => {
+                            document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: 'center' });
+                        }}>CONTÁCTAME</button>
                 </div>
             </article>
 
-            <article className="main-info__biography"> {/* TODO REVISAR */}
+            <article className="main-info__biography">
                 <img src="assets/retrato-lineal.png" alt="portrait" /> {/* TODO CAMBIAR A SVG */}
                 <div className="main-info__biography-text">
                     <h2>HOLA!</h2>
