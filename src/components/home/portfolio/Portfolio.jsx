@@ -1,7 +1,7 @@
 import PortfolioCard from "./PortfolioCard.jsx";
 import { projects } from "../../../utils/data/projects.js";
 
-import "./Portfolio.scss";
+import '../../../pages/home/Home.scss'
 
 function Portfolio() {
     return (

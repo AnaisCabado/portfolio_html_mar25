@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -174,7 +176,8 @@ button {
 
   --text-color: white;
 
-  --main-font: 'Uncut Sans', sans-serif;
+  --main-font: 'Lato', sans-serif;
+  --title-font: 'Bebas Neue', sans-serif;
   --main-weight: 400;
   --main-size: 1.125rem;
 }
@@ -213,23 +216,32 @@ body {
   color: var(--text-color);
 }
 
+h1, h2, h3 {
+  font-family: var(--title-font);
+  line-height: 1;
+}
+
 h2 {
   font-size: 3rem;
   font-weight: var(--main-weight);
-  font-family: var(--main-font);
 }
 
-#home {
+h3 {
+  font-size: 2.4rem;
+  font-weight: var(--main-weight);
+}
+
+#home, #portfolio, #contact {
   margin-top: 4em;
 }
 
 
 .button {
-  padding: .75rem 1rem;
-  text-align: center;
+  padding: .5em 1.2em;
   text-decoration: none;
   display: flex;
-
+  flex-flow: row;
+  gap: .5em;
   justify-content: center;
   align-items: center;
 
@@ -237,6 +249,8 @@ h2 {
   border: 1px solid;
   border-radius: 40px;
 
+  font-family: var(--title-font);
+  font-size: 1.8rem;
   font-weight: 600;
 
   width: fit-content;
@@ -247,4 +261,5 @@ h2 {
 
 .button:hover {
   border-radius: 10px;
+  scale: 1.1;
 }

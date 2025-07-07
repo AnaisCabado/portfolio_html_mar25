@@ -1,11 +1,11 @@
-import './MainInfo.scss'
+import '../../pages/home/Home.scss'
 
 function MainInfo() {
     return (
         <section id="main-info">
             <article className="main-info__details">
                 <div className="main-info__title">
-                    <h1>Done0424</h1>
+                    <p className="main-info__title-name">DONE0424</p>
                     <div className="main-info__title-work">
                         <p>DISEÑO &</p>
                         <p>DESARROLLO</p>

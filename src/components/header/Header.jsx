@@ -6,8 +6,8 @@ function Header() {
     return (
         <header>
             <div className="header__title">
-                <p>Done0424</p>
-                <p>Fullstack, UX/UI, diseño gráfico e ilustración</p>
+                <p>DONE0424</p>
+                <p>FULLSTACK, UX/UI, DISEÑO GRÁFICO E ILUSTRACIÓN</p>
             </div>
             <nav>
                 <ul className="header__nav">
@@ -16,12 +16,13 @@ function Header() {
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
-            </nav>
-            <ul className="header__languages">
+
+                <ul className="header__languages">
                 <li>Eusk</li>
                 <li>Cast</li>
                 <li>Eng</li>
             </ul>
+            </nav>
         </header>
     )
 }
