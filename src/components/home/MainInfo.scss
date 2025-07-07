@@ -1,0 +1,88 @@
+#main-info {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 5em;
+    padding: 2em 10%;
+
+    .main-info__details {
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 2em;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--main-color)),
+                url("/img/tarjetas-visita.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            z-index: -1;
+        }
+
+        .main-info__title {
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+
+            .main-info__title-name {
+                font-size: 3rem;
+                margin-left: .1em;
+
+                font-family: var(--title-font);
+            }
+
+            .main-info__title-work p {
+                font-size: 8rem;
+                line-height: 1;
+
+                font-family: var(--title-font);
+            }
+        }
+
+        .main-info__first-text {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-end;
+            gap: 1em;
+
+            text-align: right;
+        }
+    }
+
+    .main-info__biography {
+        display: flex;
+        flex-flow: row;
+        align-items: flex-start;
+        gap: 1em;
+
+        margin-top: 5em;
+        height: 60vh;
+
+        img {
+            width: 100%;
+            max-width: 200px;
+            object-fit: contain;
+        }
+
+        .main-info__biography-text {
+            display: flex;
+            flex-flow: column;
+            gap: 1em;
+            max-width: 60%;
+        }
+    }
+}

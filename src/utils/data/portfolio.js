@@ -1,14 +1,17 @@
-export const projects = [
+export const develop = [
   {
     title: "TERRA VISTA",
-    description: "UX/UI, Fullstack",
-    image: "path/to/image.jpg",
+    description: "Diseño UX/UI, desarrollo",
+    image: "/img/terravista.png",
     text: "Este proyecto fue una exploración creativa en diseño responsivo con enfoque en accesibilidad."
-  },
+  }
+];
+
+export const design = [
   {
     title: "IVÁN MIÑO",
-    description: "Identidad visual",
-    image: "path/to/image.jpg",
+    description: "Identidad visual, diseño gráfico",
+    image: "/img/ivan-mino-quintet-brandboard-ig.png",
     text: "Aplicación web desarrollada con React y Node.js, optimizada para alto rendimiento."
   },
   {
