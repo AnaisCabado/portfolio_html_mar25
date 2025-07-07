@@ -5,9 +5,7 @@ footer {
 
     display: flex;
     flex-flow: column;
-    gap: 4em;
-
-    position: relative;
+    gap: 8em;
 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--items-color));
 
@@ -17,7 +15,6 @@ footer {
         flex-flow: column;
         align-items: flex-end;
         gap: 1em;
-        margin-top: 4em;
 
         .languages__items {
             width: 80%;
@@ -29,12 +26,47 @@ footer {
         }
     }
 
+    .footer__shop {
+        display: flex;
+        flex-flow: column;
+        gap: 1em;
+        max-width: 80%;
+    }
+
     .footer__contact {
         display: flex;
         flex-flow: row;
         gap: 1em;
         justify-content: center;
         align-items: center;
-        margin-top: 4em;
     }
+}
+
+.footer-button {
+  padding: .5em 1.2em;
+  text-decoration: none;
+  display: flex;
+  flex-flow: row;
+  gap: .5em;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--text-color);
+  border: 1px solid;
+  border-radius: 40px;
+
+  font-family: var(--title-font);
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  width: fit-content;
+  cursor: pointer;
+
+  transition: all .3s ease;
+
+}
+
+.footer-button:hover {
+  border-radius: 10px;
+  color: var(--main-color);
 }

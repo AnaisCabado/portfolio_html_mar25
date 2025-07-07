@@ -34,6 +34,12 @@ function Footer() {
                 </div>
             </div>
 
+            <div className="footer__shop">
+                <h2>TE GUSTARÍA VESTIR MIS DISEÑOS?</h2>
+                <p>Si has llegado hasta aquí es porque algo en mi estilo ha conseguido atraparte, pues tengo buenas noticias, puedes apoyar mi trabajo comprando algunos de mis diseños en mi perfil de LaTostadora.</p>
+                <Link to='https://www.latostadora.com/shop/done0424/?shop_trk' target="_blank" className="footer-button">VER TIENDA</Link>
+            </div>
+
             <div className="footer__contact">
                 <Link to='#'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
