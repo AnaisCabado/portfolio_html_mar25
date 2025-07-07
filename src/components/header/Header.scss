@@ -31,7 +31,11 @@ header {
     }
 }
 
-header p, header li, header a {
+header p, header li{
     font-family: var(--title-font);
     font-size: 2rem;
+}
+
+header li {
+    cursor: pointer;
 }

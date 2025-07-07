@@ -22,7 +22,7 @@ function MainInfo() {
                 </div>
             </article>
 
-            <article className="main-info__biography">
+            <article className="main-info__biography" id='biography'>
                 <img src="assets/retrato-lineal.png" alt="portrait" /> {/* TODO CAMBIAR A SVG */}
                 <div className="main-info__biography-text">
                     <h2>HOLA!</h2>

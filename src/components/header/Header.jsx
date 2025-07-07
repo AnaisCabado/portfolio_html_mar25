@@ -11,10 +11,18 @@ function Header() {
             </div>
             <nav>
                 <ul className="header__nav">
-                    <li><Link to="/">Inicio</Link></li>
-                    <li><a href="#">Acerca de</a></li> {/* TODO CAMBIAR LINK */}
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li onClick={() => {
+                            document.getElementById("main-info")?.scrollIntoView({ behavior: "smooth", block: 'start' });
+                        }}>Inicio</li>
+                    <li onClick={() => {
+                            document.getElementById("biography")?.scrollIntoView({ behavior: "smooth", block: 'center' });
+                        }}>Acerca de</li>
+                    <li onClick={() => {
+                            document.getElementById("portfolio")?.scrollIntoView({ behavior: "smooth", block: 'center' });
+                        }}>Portfolio</li>
+                    <li onClick={() => {
+                            document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: 'center' });
+                        }}>Contacto</li>
                 </ul>
             </nav>
         </header>
