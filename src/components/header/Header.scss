@@ -1,0 +1,16 @@
+header {
+    width: 100%;
+    max-width: 2000px;
+    display: flex;
+    flex-flow: row;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__nav, .header__languages {
+        display: flex;
+        flex-flow: row;
+        gap: 1em;
+        align-items: center;
+    }
+}
