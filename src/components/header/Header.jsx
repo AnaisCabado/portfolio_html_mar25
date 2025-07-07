@@ -16,12 +16,6 @@ function Header() {
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
-
-                <ul className="header__languages">
-                <li>Eusk</li>
-                <li>Cast</li>
-                <li>Eng</li>
-            </ul>
             </nav>
         </header>
     )
