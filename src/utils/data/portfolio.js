@@ -33,3 +33,24 @@ export const design = [
     text: "Este proyecto fue una exploración creativa en diseño responsivo con enfoque en accesibilidad."
   }
 ];
+
+export const illustration = [
+  {
+    title: "SQUIDGAME",
+    description: "Ilustración digital, retrato",
+    image: "/img/fanart-squidgame.png",
+    text: "Aplicación web desarrollada con React y Node.js, optimizada para alto rendimiento."
+  },
+  {
+    title: "ZENDAYA",
+    description: "Ilustración digital, retrato",
+    image: "/img/Zendaya.png",
+    text: "Proyecto de branding e identidad visual acompañado de una landing page totalmente funcional."
+  },
+  {
+    title: "ON AIR",
+    description: "Ilustración digital",
+    image: "/img/on-air.png",
+    text: "Este proyecto fue una exploración creativa en diseño responsivo con enfoque en accesibilidad."
+  }
+];

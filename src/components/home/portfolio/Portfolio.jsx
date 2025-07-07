@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PortfolioCard from "./PortfolioCard.jsx";
-import { develop, design } from "../../../utils/data/portfolio.js";
+import { develop, design, illustration } from "../../../utils/data/portfolio.js";
 
 import './Portfolio.scss';
 
@@ -80,7 +80,7 @@ function Portfolio() {
                 {activeCategory === "illustration" && (
                     <div className="portfolio-cards illustration-cards">
                         {/* Puedes reemplazar esto por data real de ilustración */}
-                        {develop.map((item, index) => (
+                        {illustration.map((item, index) => (
                             <PortfolioCard
                                 key={index}
                                 title={item.title}
