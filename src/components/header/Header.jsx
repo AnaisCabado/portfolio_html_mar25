@@ -7,14 +7,14 @@ function Header() {
         <header>
             <div className="header__title">
                 <p>Done0424</p>
-                <p>Fullstack developing, UX/UI, graphic design and illustration</p>
+                <p>Fullstack, UX/UI, diseño gráfico e ilustración</p>
             </div>
             <nav>
                 <ul className="header__nav">
-                    <li><Link to="/">Home</Link></li>
-                    <li><a href="#">About</a></li> {/* TODO CAMBIAR LINK */}
+                    <li><Link to="/">Inicio</Link></li>
+                    <li><a href="#">Acerca de</a></li> {/* TODO CAMBIAR LINK */}
                     <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
             <ul className="header__languages">

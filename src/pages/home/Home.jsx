@@ -1,7 +1,11 @@
+import MainInfo from "../../components/home/MainInfo";
+import Portfolio from "../../components/home/portfolio/Portfolio";
+
 function Home() {
     return (
-        <div>
-            <h1>Home</h1>
+        <div id="home">
+            <MainInfo/>
+            <Portfolio/>
         </div>
     )
 }
