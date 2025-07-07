@@ -179,6 +179,35 @@ button {
   --main-size: 1.125rem;
 }
 
+#theme-toggle {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  padding: 1em;
+
+  border-radius: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+body.light-theme {
+  --main-color: #FEF9F3;
+  --searchbar-color: #ebebebbb;
+  --button-color: #FF956D;
+  --items-color: #ffe0d9;
+  --input-color: #ffe0d9;
+  --text-color: #3E3E3E;
+}
+
 body {
   background-color: var(--main-color);
   color: var(--text-color);
