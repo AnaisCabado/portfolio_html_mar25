@@ -72,11 +72,7 @@
         margin-top: 5em;
         height: 60vh;
 
-        img {
-            width: 100%;
-            max-width: 200px;
-            object-fit: contain;
-        }
+        position: relative;
 
         .main-info__biography-text {
             display: flex;
@@ -84,5 +80,15 @@
             gap: 1em;
             max-width: 60%;
         }
+    }
+
+    .main-info__biography img {
+        position: absolute;
+        max-width: 800px;
+
+        right: -20%;
+        top: -20%;
+
+        filter: brightness(0%) contrast(100%) saturate(0%);
     }
 }

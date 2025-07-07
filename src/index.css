@@ -72,7 +72,6 @@ details,
 embed,
 figure,
 figcaption,
-footer,
 hgroup,
 menu,
 output,
@@ -173,8 +172,8 @@ button {
   -moz-osx-font-smoothing: grayscale;
 
   --main-color: #1E1E1E;
-
-  --text-color: white;
+  --text-color: #fff2f8;
+  --items-color: #E62D86;
 
   --main-font: 'Lato', sans-serif;
   --title-font: 'Bebas Neue', sans-serif;
@@ -202,7 +201,7 @@ button {
 }
 
 body.light-theme {
-  --main-color: #FEF9F3;
+  --main-color: #fff2f8;
   --text-color: #1E1E1E;
 }
 
@@ -220,7 +219,7 @@ h1, h2, h3 {
 }
 
 h2 {
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: var(--main-weight);
 }
 
@@ -265,5 +264,5 @@ p {
 
 .button:hover {
   border-radius: 10px;
-  scale: 1.1;
+  color: var(--items-color);
 }

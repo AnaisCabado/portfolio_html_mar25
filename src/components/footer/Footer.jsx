@@ -1,3 +1,4 @@
+
 import './Footer.scss'
 
 function Footer() {
@@ -31,7 +32,6 @@ function Footer() {
                     <p className="button">ADOBE ILLUSTRATOR</p>
                 </div>
             </div>
-            <h2 className='footer-name'>DONE0424</h2>
         </footer>
     );
 }
