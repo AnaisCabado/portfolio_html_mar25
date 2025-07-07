@@ -12,7 +12,6 @@
         flex-flow: row;
         justify-content: space-between;
         align-items: flex-end;
-        gap: 2em;
 
         &::before {
             content: "";
@@ -91,4 +90,47 @@
 
         filter: brightness(0%) contrast(100%) saturate(0%);
     }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    #main-info {
+    gap: 3em;
+
+    .main-info__details {
+        flex-flow: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 1em;
+
+        .main-info__title {
+            .main-info__title-name {
+                font-size: 2rem;
+            }
+
+            .main-info__title-work p {
+                font-size: 6rem;
+            }
+        }
+
+        .main-info__first-text {
+            max-width: 100%;
+        }
+    }
+
+    .main-info__biography {
+        margin-top: 3em;
+
+        .main-info__biography-text {
+            max-width: 100%;
+        }
+    }
+
+    .main-info__biography img {
+        display: none;
+    }
+}
 }

@@ -7,7 +7,7 @@ function Header() {
         <header>
             <div className="header__title">
                 <p>DONE0424</p>
-                <p>FULLSTACK, UX/UI, DISEÑO GRÁFICO E ILUSTRACIÓN</p>
+                <p className="header__subtitle">FULLSTACK, UX/UI, DISEÑO GRÁFICO E ILUSTRACIÓN</p>
             </div>
             <nav>
                 <ul className="header__nav">
@@ -18,7 +18,7 @@ function Header() {
                             document.getElementById("biography")?.scrollIntoView({ behavior: "smooth", block: 'center' });
                         }}>Acerca de</li>
                     <li onClick={() => {
-                            document.getElementById("portfolio")?.scrollIntoView({ behavior: "smooth", block: 'center' });
+                            document.getElementById("portfolio")?.scrollIntoView({ behavior: "smooth", block: 'start' });
                         }}>Portfolio</li>
                     <li onClick={() => {
                             document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: 'center' });

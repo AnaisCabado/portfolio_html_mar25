@@ -43,30 +43,52 @@ footer {
 }
 
 .footer-button {
-  padding: .5em 1.2em;
-  text-decoration: none;
-  display: flex;
-  flex-flow: row;
-  gap: .5em;
-  justify-content: center;
-  align-items: center;
+    padding: .5em 1.2em;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row;
+    gap: .5em;
+    justify-content: center;
+    align-items: center;
 
-  color: var(--text-color);
-  border: 1px solid;
-  border-radius: 40px;
+    color: var(--text-color);
+    border: 1px solid;
+    border-radius: 40px;
 
-  font-family: var(--title-font);
-  font-size: 1.8rem;
-  font-weight: 600;
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    font-weight: 600;
 
-  width: fit-content;
-  cursor: pointer;
+    width: fit-content;
+    cursor: pointer;
 
-  transition: all .3s ease;
+    transition: all .3s ease;
 
 }
 
 .footer-button:hover {
-  border-radius: 10px;
-  color: var(--main-color);
+    border-radius: 10px;
+    color: var(--main-color);
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    footer {
+        .languages {
+            align-items: center;
+
+            .languages__items {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        .footer__shop {
+            max-width: 100%;
+        }
+    }
 }

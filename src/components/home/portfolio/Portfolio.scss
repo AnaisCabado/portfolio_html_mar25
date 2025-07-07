@@ -96,14 +96,47 @@
     line-height: 1;
 }
 
-@media (max-width: 768px) {
-    .portfolio-cards {
-        grid-template-columns: 1fr;
-    }
 
-    .portfolio-card,
-    .portfolio-card:nth-child(even) {
-        flex-direction: column;
-        text-align: center;
+
+
+
+
+@media (max-width: 768px) {
+    #portfolio {
+        gap: 3em;
+
+        .portfolio__categories {
+            gap: 3em;
+            position: relative;
+
+            .portfolio-titles {
+                gap: 1em;
+                flex-flow: row wrap;
+
+                position: sticky;
+                top: 3em;
+                
+                background-color: var(--main-color);
+                padding: 1em 0;
+                z-index: 100;
+            }
+        }
+
+        .portfolio-cards {
+            display: flex;
+            flex-flow: column;
+            gap: 2em;
+            position: relative;
+
+            .portfolio-card {
+                text-align: left;
+                gap: 1em;
+
+                .portfolio-card__image {
+                    filter: grayscale(0);
+
+                }
+            }
+        }
     }
 }
