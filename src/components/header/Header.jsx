@@ -1,32 +1,43 @@
-import { Link } from "react-router-dom";
-
+import { useState } from "react";
 import './Header.scss';
 
 function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => setIsOpen(!isOpen);
+
+    const handleNavClick = (id) => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+        setIsOpen(false); // Cierra el menú al hacer clic
+    };
+
     return (
         <header>
             <div className="header__title">
                 <p>DONE0424</p>
                 <p className="header__subtitle">FULLSTACK, UX/UI, DISEÑO GRÁFICO E ILUSTRACIÓN</p>
             </div>
-            <nav>
+
+            {/* MENÚ DESLIZANTE */}
+            <nav className={`slide-menu ${isOpen ? 'open' : ''}`}>
+                {/* BOTÓN HAMBURGUESA */}
+                <button
+                    className="burger-toggle"
+                    onClick={toggleMenu}
+                    aria-label="Abrir o cerrar menú"
+                >
+                    ☰
+                </button>
+
                 <ul className="header__nav">
-                    <li onClick={() => {
-                            document.getElementById("main-info")?.scrollIntoView({ behavior: "smooth", block: 'start' });
-                        }}>Inicio</li>
-                    <li onClick={() => {
-                            document.getElementById("biography")?.scrollIntoView({ behavior: "smooth", block: 'center' });
-                        }}>Acerca de</li>
-                    <li onClick={() => {
-                            document.getElementById("portfolio")?.scrollIntoView({ behavior: "smooth", block: 'start' });
-                        }}>Portfolio</li>
-                    <li onClick={() => {
-                            document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: 'center' });
-                        }}>Contacto</li>
+                    <li onClick={() => handleNavClick("main-info")}>Inicio</li>
+                    <li onClick={() => handleNavClick("biography")}>Acerca de</li>
+                    <li onClick={() => handleNavClick("portfolio")}>Portfolio</li>
+                    <li onClick={() => handleNavClick("contact")}>Contacto</li>
                 </ul>
             </nav>
         </header>
-    )
+    );
 }
 
-export default Header
+export default Header;

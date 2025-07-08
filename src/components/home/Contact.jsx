@@ -5,7 +5,7 @@ import './Contact.scss';
 function Contact() {
     return (
         <section id="contact">
-            <h2>¿TE HAS QUEDADO CON GANAS DE SABER MÁS?</h2>
+            <h2>¿TE GUSTARÍA ESTAR EN CONTACTO?</h2>
 
             <form action="procesar.php" method="post" className="contact__form">
                 <input type="text" name="name" placeholder="Nombre" />

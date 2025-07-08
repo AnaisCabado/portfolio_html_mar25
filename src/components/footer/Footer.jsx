@@ -8,29 +8,29 @@ function Footer() {
             <div className="languages">
                 <h2>HERRAMIENTAS Y LENGUAJES QUE UTILIZO</h2>
                 <div className="languages__items">
-                    <p className="button">HTML5</p>
-                    <p className="button">CSS3</p>
-                    <p className="button">SASS</p>
-                    <p className="button">TAILWIND</p>
-                    <p className="button">BOOTSTRAP</p>
-                    <p className="button">ASTRO</p>
+                    <p className="footer-button">HTML5</p>
+                    <p className="footer-button">CSS3</p>
+                    <p className="footer-button">SASS</p>
+                    <p className="footer-button">TAILWIND</p>
+                    <p className="footer-button">BOOTSTRAP</p>
+                    <p className="footer-button">ASTRO</p>
 
-                    <p className="button">JAVASCRIPT</p>
-                    <p className="button">REACT</p>
+                    <p className="footer-button">JAVASCRIPT</p>
+                    <p className="footer-button">REACT</p>
 
-                    <p className="button">NODEJS</p>
-                    <p className="button">EXPRESS</p>
+                    <p className="footer-button">NODEJS</p>
+                    <p className="footer-button">EXPRESS</p>
 
-                    <p className="button">MONGODB</p>
-                    <p className="button">MYSQL</p>
+                    <p className="footer-button">MONGODB</p>
+                    <p className="footer-button">MYSQL</p>
 
-                    <p className="button">GIT</p>
-                    <p className="button">GITHUB</p>
+                    <p className="footer-button">GIT</p>
+                    <p className="footer-button">GITHUB</p>
 
-                    <p className="button">FIGMA</p>
-                    <p className="button">ADOBE XD</p>
-                    <p className="button">ADOBE PHOTOSHOP</p>
-                    <p className="button">ADOBE ILLUSTRATOR</p>
+                    <p className="footer-button">FIGMA</p>
+                    <p className="footer-button">ADOBE XD</p>
+                    <p className="footer-button">ADOBE PHOTOSHOP</p>
+                    <p className="footer-button">ADOBE ILLUSTRATOR</p>
                 </div>
             </div>
 

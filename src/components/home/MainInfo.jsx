@@ -24,7 +24,7 @@ function MainInfo() {
 
             <article className="main-info__biography" id='biography'>
                 <img src="assets/retrato-lineal.png" alt="portrait" /> {/* TODO CAMBIAR A SVG */}
-                <div className="main-info__biography-text">
+                <div className="main-info__biography-text"> {/* TODO RESUMIR */}
                     <h2>HOLA!</h2>
                     <p>Soy Done0424, una diseñadora gráfica especializada en UX/UI, en proceso de transición hacia el desarrollo frontend, con una base sólida en diseño centrado en el usuario, usabilidad y diseño visual.</p>
                     <p>Finalicé en 2024 el Máster en UX/UI en CEI Madrid, y en 2025 el BBK Bootcamp Full Stack Developer en The Bridge, lo que me ha permitido adquirir conocimientos técnicos avanzados y experiencia práctica en desarrollo web.</p>

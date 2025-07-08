@@ -184,7 +184,7 @@ button {
   position: fixed;
   bottom: 1em;
   left: 1em;
-  padding: 1em;
+  padding: .8em;
 
   border-radius: 100px;
 
@@ -192,11 +192,13 @@ button {
   justify-content: center;
   align-items: center;
 
-  color: var(--text-color);
-  border: 1px solid var(--text-color);
+  background-color: var(--items-color);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
 
   cursor: pointer;
   transition: all .3s ease;
+  z-index: 200;
 }
 
 body.light-theme {
@@ -220,12 +222,12 @@ h3 {
 }
 
 h2 {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: var(--main-weight);
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: var(--main-weight);
 }
 
@@ -242,7 +244,7 @@ p {
 
 
 .button {
-  padding: .5em 1.2em;
+  padding: .2em 1em;
   text-decoration: none;
   display: flex;
   flex-flow: row;
@@ -250,12 +252,12 @@ p {
   justify-content: center;
   align-items: center;
 
-  color: var(--text-color);
+  color: var(--items-color);
   border: 1px solid;
   border-radius: 40px;
 
   font-family: var(--title-font);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
 
   width: fit-content;
@@ -268,19 +270,4 @@ p {
 .button:hover {
   border-radius: 10px;
   color: var(--items-color);
-}
-
-
-
-
-@media (max-width: 768px) {
-  h2 {
-    font-size: 6rem;
-    font-weight: var(--main-weight);
-  }
-
-  h3 {
-    font-size: 2rem;
-    font-weight: var(--main-weight);
-  }
 }

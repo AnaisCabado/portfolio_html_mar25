@@ -1,7 +1,7 @@
 header {
     width: 100%;
     overflow: hidden;
-    padding: 1em 0;
+    padding: .5em 2em;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,18 +10,21 @@ header {
 
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     font-family: var(--title-font);
 
     z-index: 1000;
 
-    .header__title,
-    .header__nav {
+    .header__title {
         display: flex;
         flex-flow: row;
         gap: 2em;
+    }
+
+    .header__subtitle {
+        display: none;
     }
 }
 
@@ -36,26 +39,61 @@ header li {
 }
 
 
+/* TOGGLE MENU */
+.slide-menu {
+    position: fixed;
+    top: 0;
+    left: -12em;
+    width: 12em;
+    height: 100vh;
 
+    background-color: var(--main-color);
 
-@media (max-width: 768px) {
-    header {
-        padding: .5em;
-        .header__nav {
-            gap: 1em;
-        }
-        .header__title {
-            flex-flow: column;
-            gap: 0;
-        }
+    transition: left 0.3s ease-in-out;
 
-        .header__subtitle {
-            display: none;
-        }
+    z-index: 1050;
+
+    padding: 2em 1em;
+
+    /* BURGER BUTTON */
+    .burger-toggle {
+        position: fixed;
+        top: 3em;
+        left: 0em;
+        z-index: 1100;
+
+        background-color: var(--main-color);
+        color: var(--text-color);
+
+        border-radius: 0 .5em .5em 0;
+        width: 1.8em;
+        height: 3em;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+
+        transition: all .3s ease;
     }
 
-    header p,
-    header li {
-        font-size: 1.4rem;
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    li {
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+.slide-menu.open {
+    left: 0;
+
+    .burger-toggle {
+        left: 8em; // TODO REVISAR ANIMACION
     }
 }
