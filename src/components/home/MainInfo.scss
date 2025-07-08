@@ -3,7 +3,7 @@
     display: flex;
     flex-flow: column;
     gap: 5em;
-    padding: 2em;
+    padding: 2em 5%;
 
     .main-info__details {
         width: 100%;
@@ -62,16 +62,6 @@
     }
 
     .main-info__biography {
-        display: flex;
-        flex-flow: row;
-        align-items: flex-start;
-        gap: 1em;
-
-        margin-top: 5em;
-        min-height: 60vh;
-
-        position: relative;
-
         .main-info__biography-text {
             display: flex;
             flex-flow: column;
@@ -85,3 +75,62 @@
 }
 
 
+
+
+
+
+@media (min-width: 1280px) {
+    #main-info {
+        overflow-x: hidden;
+
+        .main-info__details {
+            height: 85vh;
+            flex-flow: row;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            .main-info__title {
+                .main-info__title-name {
+                    font-size: 4rem;
+                }
+
+                .main-info__title-work p {
+                    font-size: 8rem;
+                }
+            }
+
+            .main-info__first-text {
+                max-width: 500px;
+            }
+        }
+
+        .main-info__biography {
+            display: flex;
+            flex-flow: row;
+            align-items: flex-start;
+            gap: 1em;
+
+            margin-top: 5em;
+            min-height: 60vh;
+
+            position: relative;
+
+            .main-info__biography-text {
+                max-width: 50%;
+            }
+        }
+
+        .main-info__biography img {
+            display: flex;
+
+            position: absolute;
+            right: -20%;
+            top: -10%;
+
+            max-width: 700px;
+        }
+    }
+
+
+
+}
