@@ -69,7 +69,8 @@ function Portfolio() {
                 </div>
             </article>
 
-            <article className="portfolio__categories" style={{ display: "none" }}>
+            <article className="portfolio__categories">
+                <h2>MIS ÚLTIMOS TRABAJOS</h2>
                 <div className="portfolio-titles">
                     <div
                         className={`portfolio-title ${activeCategory === "develop" ? "active" : ""}`}
