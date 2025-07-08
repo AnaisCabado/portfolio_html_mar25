@@ -1,17 +1,37 @@
 import { Link } from "react-router-dom";
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 import './Contact.scss';
 
 function Contact() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
+            .then((result) => {
+                console.log(result.text);
+                alert("Mensaje enviado con exito");
+            }, (error) => {
+                console.log(error.text);
+                alert("Error al enviar el mensaje");
+            });
+
+        e.target.reset();
+    };
+
     return (
         <section id="contact">
             <h2>¿TE GUSTARÍA ESTAR EN CONTACTO?</h2>
 
-            <form action="procesar.php" method="post" className="contact__form">
-                <input type="text" name="name" placeholder="Nombre" />
-                <input type="email" name="email" placeholder="Email" />
-                <textarea name="message" placeholder="Mensaje"></textarea>
-                <button type="submit" className="button">ENVIAR</button>
+            <form ref={form} onSubmit={sendEmail} className="contact__form">
+                <input type="text" name="name" placeholder="Nombre" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <input type="text" name="title" placeholder="Asunto" required />
+                <textarea name="message" placeholder="Mensaje" required />
+                <button type="submit" className="button">Enviar</button>
             </form>
 
             <div className="contact__social">

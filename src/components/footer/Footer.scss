@@ -35,10 +35,18 @@ footer {
 
     .footer__contact {
         display: flex;
-        flex-flow: row;
+        flex-flow: column;
         gap: 1em;
         justify-content: center;
         align-items: center;
+
+        .footer__contact-links {
+            display: flex;
+            flex-flow: row;
+            gap: 1em;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
@@ -78,7 +86,7 @@ footer {
 @media (min-width: 1280px) {
     footer {
         padding: 2em 5%;
-        
+
         .languages {
             align-items: flex-end;
             text-align: right;
@@ -94,46 +102,10 @@ footer {
             flex-flow: column;
             gap: 1em;
             width: 100%;
-            
+
             p {
                 max-width: 80%;
             }
         }
-
-        .footer__contact {
-            display: flex;
-            flex-flow: row;
-            gap: 1em;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-
-    .footer-button {
-        padding: .2em 1em;
-        text-decoration: none;
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
-        align-items: center;
-
-        color: var(--text-color);
-        border: 1px solid;
-        border-radius: 40px;
-
-        font-family: var(--title-font);
-        font-size: 1.6rem;
-        font-weight: 600;
-
-        width: fit-content;
-        cursor: pointer;
-
-        transition: all .3s ease;
-
-    }
-
-    .footer-button:hover {
-        border-radius: 10px;
-        color: var(--main-color);
     }
 }

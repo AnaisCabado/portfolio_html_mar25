@@ -8,7 +8,7 @@ export const develop = [ /* TODO AÑADIR ETIQUETAS */
   {
     title: "PORTFOLIO",
     description: "Diseño UX/UI, desarrollo",
-    image: "/img/terravista.png",
+    image: "/img/portfolio.png",
     text: "Este proyecto fue una exploración creativa en diseño responsivo con enfoque en accesibilidad."
   }
 ];

@@ -81,8 +81,6 @@
 
 @media (min-width: 1280px) {
     #main-info {
-        overflow-x: hidden;
-
         .main-info__details {
             height: 85vh;
             flex-flow: row;
@@ -107,27 +105,23 @@
         .main-info__biography {
             display: flex;
             flex-flow: row;
-            align-items: flex-start;
+            justify-content: space-between;
+            align-items: center;
             gap: 1em;
 
-            margin-top: 5em;
-            min-height: 60vh;
+            height: 100vh;
 
             position: relative;
 
             .main-info__biography-text {
-                max-width: 50%;
+                max-width: 1000px;
             }
         }
 
         .main-info__biography img {
             display: flex;
-
-            position: absolute;
-            right: -20%;
-            top: -10%;
-
-            max-width: 700px;
+            max-width: 600px;
+            filter: brightness(0);
         }
     }
 

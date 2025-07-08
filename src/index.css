@@ -231,6 +231,7 @@ p {
 #portfolio,
 #contact {
   margin-top: 4em;
+  overflow: hidden;
 }
 
 
@@ -255,7 +256,6 @@ p {
   cursor: pointer;
 
   transition: all .3s ease;
-
 }
 
 .button:hover {
@@ -276,7 +276,7 @@ p {
     right: auto;
 
     color: var(--text-color);
-    background-color: var(--main-color);
+    background-color: transparent;
     border: 1px solid var(--text-color);
     border-radius: 100px;
 
@@ -296,5 +296,17 @@ p {
   h3 {
     font-size: 4rem;
     font-weight: var(--main-weight);
+  }
+
+
+  #contact,
+  footer {
+    margin-top: 8em;
+  }
+
+
+  .button, .footer-button {
+    padding: .2em 1em;
+    font-size: 2rem;
   }
 }

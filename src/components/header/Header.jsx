@@ -14,7 +14,7 @@ function Header() {
     return (
         <header>
             <div className="header__title">
-                <p>DONE0424</p>
+                <a href="/">DONE0424</a>
                 <p className="header__subtitle">FULLSTACK, UX/UI, DISEÑO GRÁFICO E ILUSTRACIÓN</p>
             </div>
 

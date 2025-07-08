@@ -29,7 +29,6 @@
         display: flex;
         flex-flow: row wrap;
         gap: 1em;
-        /* TODO REMARCAR SCROLL Y OCULTAR BARRA */
 
 
         .portfolio-card {
@@ -58,14 +57,9 @@
                 min-height: 180px;
                 max-height: 250px;
                 object-fit: cover;
-                // filter: grayscale(100%);
 
                 transition: all .3s ease;
             }
-        }
-
-        .portfolio-card:hover .portfolio-card__image {
-            filter: grayscale(0);
         }
     }
 }
@@ -95,7 +89,7 @@
         .portfolio__categories {
             display: flex;
             flex-flow: column;
-            gap: 4em;
+            gap: 2em;
 
             position: relative;
 
@@ -133,6 +127,7 @@
             width: 100%;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            gap: 4em;
 
             .portfolio-card {
                 .portfolio-card__image {
