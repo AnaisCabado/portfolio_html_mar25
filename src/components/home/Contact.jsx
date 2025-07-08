@@ -24,13 +24,17 @@ function Contact() {
 
     return (
         <section id="contact">
-            <h2>¿TE GUSTARÍA ESTAR EN CONTACTO?</h2>
+            <div className="contact__text">
+                <h2>¿TE GUSTARÍA ESTAR EN CONTACTO?</h2>
+                <p>No dudes en ponerte en contacto si tienes alguna pregunta o si deseas trabajar conmigo. Mándame un mensaje a través de este formulario o ponte en contacto conmigo a través de cualquiera de las redes sociales que puedes encontrar debajo de él.</p>
+            </div>
 
             <form ref={form} onSubmit={sendEmail} className="contact__form">
-                <input type="text" name="name" placeholder="Nombre" required />
-                <input type="email" name="email" placeholder="Email" required />
+                <h3>CUÉNTAME TU IDEA</h3>
+                <input type="text" name="name" placeholder="Nombre completo*" required />
+                <input type="email" name="email" placeholder="Email*" required />
                 <input type="text" name="title" placeholder="Asunto" required />
-                <textarea name="message" placeholder="Mensaje" required />
+                <textarea name="message" placeholder="Mensaje*" required />
                 <button type="submit" className="button">Enviar</button>
             </form>
 
