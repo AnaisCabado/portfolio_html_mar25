@@ -32,10 +32,7 @@ header p,
 header li {
     font-family: var(--title-font);
     font-size: 2rem;
-}
-
-header li {
-    cursor: pointer;
+    margin-top: .1em;
 }
 
 
@@ -58,7 +55,7 @@ header li {
     /* BURGER BUTTON */
     .burger-toggle {
         position: fixed;
-        top: 3em;
+        top: 0em;
         left: 0em;
         z-index: 1100;
 
@@ -67,7 +64,7 @@ header li {
 
         border-radius: 0 .5em .5em 0;
         width: 1.8em;
-        height: 3em;
+        height: 2.6em;
         font-size: 1.5em;
         display: flex;
         justify-content: center;
@@ -95,5 +92,54 @@ header li {
 
     .burger-toggle {
         left: 8em; // TODO REVISAR ANIMACION
+    }
+}
+
+
+
+
+
+
+@media (min-width: 1280px) {
+    header {
+        max-width: 1800px;
+        justify-content: space-between;
+
+        .header__subtitle {
+            display: flex;
+        }
+    }
+
+    header li {
+        cursor: pointer;
+    }
+
+
+    /* TOGGLE MENU */
+    .slide-menu {
+        position: static;
+        width: fit-content;
+        height: fit-content;
+
+        background-color: transparent;
+
+        padding: 0;
+
+        /* BURGER BUTTON */
+        .burger-toggle {
+            display: none;
+        }
+
+        .header__nav {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+        }
+
+        li {
+            font-size: 2rem;
+            cursor: pointer;
+            width: fit-content;
+        }
     }
 }
