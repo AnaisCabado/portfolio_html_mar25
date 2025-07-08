@@ -35,3 +35,16 @@
         gap: 1em;
     }
 }
+
+
+@media (min-width: 1280px) {
+    #contact {
+        align-items: center;
+        padding: 2em 5%;
+
+        .contact__form {
+            width: 100%;
+            max-width: 1000px;
+        }
+    }
+}
