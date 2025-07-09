@@ -30,7 +30,7 @@ function MainInfo() {
                     <p>Como perfil híbrido, combino sensibilidad estética con habilidades técnicas para crear interfaces eficientes, accesibles y visualmente atractivas. Me apasiona el diseño de interacción, la arquitectura de información y la implementación de sistemas de diseño reutilizables. Tengo experiencia trabajando con metodologías ágiles, y valoro la colaboración en equipos multidisciplinares.</p>
                     <p>Busco formar parte de un equipo donde pueda aportar soluciones frontend de calidad, desde la empatía, el detalle y la pasión por mejorar la experiencia de usuario.</p>
                 </div>
-                <img src="assets/retrato-lineal.png" alt="portrait" /> {/* TODO CAMBIAR A SVG */}
+                <img src="img/isotipo.svg" alt="logotipo" /> 
             </article>
         </section>
     )

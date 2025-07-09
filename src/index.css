@@ -258,11 +258,6 @@ p {
   transition: all .3s ease;
 }
 
-.button:hover {
-  border-radius: 10px;
-  color: var(--items-color);
-}
-
 
 
 
@@ -305,8 +300,14 @@ p {
   }
 
 
-  .button, .footer-button {
+  .button,
+  .footer-button {
     padding: .2em 1em;
     font-size: 2rem;
+  }
+
+  .button:hover {
+    border-radius: 10px;
+    color: var(--items-color);
   }
 }

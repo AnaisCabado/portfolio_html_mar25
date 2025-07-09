@@ -23,7 +23,7 @@
             height: 100vh;
 
             background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--main-color)),
-                url("/img/tarjetas-visita.png");
+                url("/img/tarjetas-visita.webp");
             background-size: cover;
             background-position: start;
             background-repeat: no-repeat;
@@ -121,7 +121,6 @@
         .main-info__biography img {
             display: flex;
             max-width: 600px;
-            filter: brightness(0);
         }
     }
 
