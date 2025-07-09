@@ -4,11 +4,11 @@ import Contact from "../../components/home/Contact";
 
 function Home() {
     return (
-        <div id="home">
+        <section id="home">
             <MainInfo/>
             <Portfolio/>
             <Contact/>
-        </div>
+        </section>
     )
 }
 

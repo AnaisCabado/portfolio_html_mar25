@@ -11,7 +11,7 @@ function PortfolioCard({ title, description, image, text }) {
                 <p>{text}</p>
             </div>
 
-            <Link to="#" className="button">VER PROYECTO</Link>
+            <Link to={`/project/${title.toLowerCase().replaceAll(' ', '-')}`} className="button">VER PROYECTO</Link>
         </div>
     )
 }

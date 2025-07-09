@@ -23,6 +23,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "./pages/root/Root";
 
 import Home from "./pages/home/Home";
+import Project from "./pages/project/Project";
 
 const router = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />,
+            },
+            {
+                path: "/project/:projectTitle",
+                element: <Project />,
             },
         ]
     }

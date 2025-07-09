@@ -33,6 +33,11 @@ header li, header a {
     font-family: var(--title-font);
     font-size: 2rem;
     margin-top: .1em;
+    transition: all .3s ease;
+}
+
+header li:hover {
+    color: var(--items-color);
 }
 
 

@@ -8,6 +8,7 @@ function Footer() {
             <div className="languages">
                 <h2>HERRAMIENTAS Y LENGUAJES QUE UTILIZO</h2>
                 <div className="languages__items">
+                    {/* DEVELOP */}
                     <p className="footer-button">HTML5</p>
                     <p className="footer-button">CSS3</p>
                     <p className="footer-button">SASS</p>
@@ -27,10 +28,14 @@ function Footer() {
                     <p className="footer-button">GIT</p>
                     <p className="footer-button">GITHUB</p>
 
+                    {/* DESIGN */}
                     <p className="footer-button">FIGMA</p>
                     <p className="footer-button">ADOBE XD</p>
                     <p className="footer-button">ADOBE PHOTOSHOP</p>
                     <p className="footer-button">ADOBE ILLUSTRATOR</p>
+
+                    {/* ILLUSTRATION */}
+                    <p className="footer-button">PROCREATE</p>
                 </div>
             </div>
 

@@ -47,6 +47,10 @@ footer {
             gap: 1em;
             justify-content: center;
             align-items: center;
+
+            a {
+                transition: all .3s ease;
+            }
         }
     }
 }
@@ -106,6 +110,10 @@ footer {
 
         .footer-button:hover {
             border-radius: 10px;
+            color: var(--main-color);
+        }
+
+        .footer__contact-links a:hover {
             color: var(--main-color);
         }
     }
