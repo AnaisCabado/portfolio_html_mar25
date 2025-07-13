@@ -36,6 +36,7 @@
             display: flex;
             flex-flow: column;
             gap: 1em;
+            justify-content: space-between;
 
             padding: 2em;
             border-radius: 1em;
@@ -50,6 +51,14 @@
                 flex-flow: column;
                 justify-content: center;
                 width: fit-content;
+
+                .portfolio-card__main-text {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
             }
 
             .portfolio-card__image {

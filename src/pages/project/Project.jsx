@@ -15,8 +15,22 @@ function Project() {
                 key={project.index}
                 title={project.title}
                 description={project.description}
-                image={project.image}
-                text={project.text}
+                mainImg={project.mainImg}
+                mainText={project.mainText}
+
+                img1={project.img1}
+                img2={project.img2}
+                img3={project.img3}
+
+                vid1={project.vid1}
+                vid2={project.vid2}
+                vid3={project.vid3}
+
+                text1={project.text1}
+                text2={project.text2}
+                text3={project.text3}
+
+                tools={project.tools}
             />
         </section>
     )
