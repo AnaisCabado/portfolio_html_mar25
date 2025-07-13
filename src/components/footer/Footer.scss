@@ -13,7 +13,7 @@ footer {
         width: 100%;
         display: flex;
         flex-flow: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 1em;
 
         .languages__items {
@@ -29,6 +29,8 @@ footer {
     .footer__shop {
         display: flex;
         flex-flow: column;
+        align-items: center;
+        text-align: center;
         gap: 1em;
         width: 100%;
     }
@@ -100,6 +102,8 @@ footer {
         .footer__shop {
             display: flex;
             flex-flow: column;
+            align-items: flex-start;
+            text-align: left;
             gap: 1em;
             width: 100%;
 

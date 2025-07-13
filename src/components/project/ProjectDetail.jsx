@@ -4,28 +4,45 @@ function ProjectDetail({ title, description, mainImg, mainText, img1, img2, img3
     return (
         <div className="project-detail">
             <div className="project-detail__banner">
-                <img src={mainImg} alt={title} loading="lazy" className="project-detail__banner__img" />
-                <div className="project-detail__banner__info">
-                    <h1 className="project-detail__banner__title">{title}</h1>
-                    <p>{description}</p>
+                <div className="project-detail__banner__img">
+                    <img src={mainImg} alt={title} loading="lazy" />
                 </div>
             </div>
             <div className="project-detail__content">
+                <div className="project-detail__info">
+                    <h1 className="project-detail__title">{title}</h1>
+                    <p>{description}</p>
+                </div>
+
                 <p className='main-text'>{mainText}</p>
 
-                <img src={img1} alt="" />
-                <img src={img2} alt="" />
-                <img src={img3} alt="" />
+                <div className="project-detail__part1">
+                    {img1 ? (
+                        <img src={img1} alt={title} loading="lazy" />
+                    ) : vid1 ? (
+                        <video src={vid1} controls autoPlay loop className="project-info__video" />
+                    ) : null}
 
-                <video src={vid1} controls autoplay className="project-info__video"></video>
-                <video src={vid2} controls autoplay className="project-info__video"></video>
-                <video src={vid3} controls autoplay className="project-info__video"></video>
+                    <p className="project-detail__text1">{text1}</p>
+                </div>
 
-                <p>{text1}</p>
-                <p>{text2}</p>
-                <p>{text3}</p>
+                {img2 ? (
+                    <img src={img2} alt={title} loading="lazy" />
+                ) : vid2 ? (
+                    <video src={vid2} controls autoPlay loop className="project-info__video" />
+                ) : null}
 
-                <p>{tools}</p>
+                <p className="project-detail__text2">{text2}</p>
+
+                {img3 ? (
+                    <img src={img3} alt={title} loading="lazy" />
+                ) : vid3 ? (
+                    <video src={vid3} controls autoPlay loop className="project-info__video" />
+                ) : null}
+
+                <p className="project-detail__text3">{text3}</p>
+
+                <p className='project-detail__tools'>{tools}</p>
             </div>
 
         </div>

@@ -5,6 +5,7 @@
     .project-detail {
         display: flex;
         flex-flow: column;
+        align-items: center;
         gap: 4em;
 
         .project-detail__banner {
@@ -15,29 +16,48 @@
             flex-flow: column;
             gap: 1em;
 
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: -2em;
-                width: 100vw;
-                height: 100%;
-                background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--main-color)); // ajusta colores
-                z-index: 1;
-                pointer-events: none;
-            }
+            height: 20vh;
+
 
             .project-detail__banner__img {
                 width: 100vw;
                 top: 0;
                 left: -2em;
-                position: relative;
+                position: absolute;
 
-                max-height: 40vh;
                 object-fit: cover;
-            }
 
-            .project-detail__banner__info {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100%;
+                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--main-color)); // ajusta colores
+                    z-index: 1;
+                    pointer-events: none;
+                }
+
+                img {
+                    max-height: 40vh;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .project-detail__content {
+            margin-top: 20vh;
+
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            gap: 4em;
+
+            .project-detail__info {
+                width: 100%;
+
                 position: relative;
                 z-index: 2;
                 color: var(--text-color);
@@ -58,18 +78,59 @@
                     line-height: 1;
                     font-weight: 600;
                     font-family: var(--title-font);
-                };
-            }
-        }
+                }
 
-        .project-detail__content {
-            width: 100%;
-            display: flex;
-            flex-flow: column;
-            gap: 1em;
+                ;
+            }
 
             .main-text {
+                width: 100%;
                 max-width: 1200px;
+            }
+
+            .project-detail__part1 {
+                display: flex;
+                flex-flow: column;
+                gap: 1em;
+            }
+
+            img,
+            video {
+                width: 100%;
+                max-width: 1500px;
+            }
+
+            .project-detail__tools {
+                color: var(--items-color);
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 1280px) {
+    #project {
+        padding: 2em 5%;
+
+        .project-detail {
+            .project-detail__banner {
+                .project-detail__banner__img {
+                    left: -5%;
+                }
+            }
+
+            .project-detail__content {
+                .project-detail__part1 {
+                    flex-flow: row;
+                    align-items: center;
+                    gap: 2em;
+
+                    .project-detail__text1 {
+                        max-width: 30%;
+                    }
+                }
             }
         }
     }

@@ -1,4 +1,5 @@
 import ProjectDetail from "../../components/project/ProjectDetail";
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { develop, design, illustration } from "../../utils/data/projectDetail";
 
@@ -11,6 +12,8 @@ function Project() {
 
     return (
         <section id="project">
+            <Link to="/" className="back-button">HOME</Link>
+            
             <ProjectDetail
                 key={project.index}
                 title={project.title}
