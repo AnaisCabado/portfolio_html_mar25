@@ -2,10 +2,15 @@ import { useEffect, useState } from "react";
 
 function ThemeChange() {
 
-    const [isLightTheme, setIsLightTheme] = useState(false);
+    // FUNCTION TO CHANGE THE THEME, SAVING THE VALUE IN LOCALSTORAGE
+    const [isLightTheme, setIsLightTheme] = useState(() => {
+        const savedTheme = localStorage.getItem('isLightTheme');
+        return savedTheme === 'true';
+    });
 
     useEffect(() => {
         document.body.classList.toggle('light-theme', isLightTheme);
+        localStorage.setItem('isLightTheme', isLightTheme);
     }, [isLightTheme]);
 
     const toggleTheme = () => {
